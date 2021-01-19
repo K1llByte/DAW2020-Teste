@@ -1,0 +1,32 @@
+<pr>
+    <meta>
+        <key>DAW 2021</key>
+        <title>DAW 2021 Exam Project Record</title>
+        <bdate>20 de Janeiro 2021</bdate>
+        <edate>20 de Janeiro 2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+
+    <team>
+        <member id="a85272">
+            <name>Jorge Mota</name>
+            <email>a85272@alunos.uminho.pt</email>
+        </member>
+    </team>
+
+    <abstract>
+        persistência de dados, 
+        do setup de bases de dados, 
+        respostas textuais pedidas, 
+        instruções de como executar as aplicações desenvolvidas
+        
+    </abstract>
+
+    <deliverables>
+        <!--
+        <link url="https://github.com/K1llByte/daw/tree/master/tpcs/tpc8">
+            TP8 Directory GitHub Page
+        </link>
+        -->
+    </deliverables>
+</pr>
