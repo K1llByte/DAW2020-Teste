@@ -15,14 +15,47 @@
     </team>
 
     <abstract>
-        persistência de dados, 
-        do setup de bases de dados, 
-        respostas textuais pedidas, 
-        instruções de como executar as aplicações desenvolvidas
+        <b>Exercicio 1</b>
+        <p>
+            Para o exercicio 1, tivemos 2 fases principais, o pre processamento do ficheiro json para criar a base de dados, e o desenvolvimento de API proposta.
+            Para a primeira parte foi usada a linguagen <i>Python</i> para processar o texto do ficheiro JSON e para reparar erros de sintaxe (ficheiro <i>cleansing.py</i>).
+        </p>
+        <p>
+            Para importar para o mongodb estes dados fizemos o comando: 
+            <i>mongoimport --jsonArray -d daw2020 -c baptisms clean_batismos.json</i>
+        </p>
+        <p>
+            Todo o codigo relativo ao projeto de desenvolver a API está na pasta <i>api/</i>.
+        </p>
+        <p>
+            Depois de processado foi também utilizado um script caseiro pré feito para poupar tempo a fazer o ficheiro que define o <i>Schema</i>. Esse script analisou o ficheiro de base de dados e gerou todo o ficheiro <i>baptism.js</i>
+        </p>
+
+        <p>
+            As respostas textuais (warmup) foram desenvolvidas com javascript (nodejs) e estão no ficheiro <i>ex2/warmup.js</i> (dá para ter as respostas ao executar <i>node warmup.js</i> se o token ainda for valido).
+            As respostas foram:
+
+            1. num desc c900 = 2
+            1. Codigos dos processos:
+            -  900.10
+            -  900.20
+            2. num entidades = 637
+            3. num desc c900.10 = 8
+            4. num procRel c900.10.505 = 5
+        </p>
+
+        <p>
+            Para ambos os exercicios depois de dentro das pastas <i>api</i> e <i>app</i> pod -se executar o comando:
+            <i>node bin/www</i>
+            Para começar cada servidors
+        </p>
         
     </abstract>
 
     <deliverables>
+        <link url="">
+            Python script to clean the JSON file for mongodb
+        </link>
         <!--
         <link url="https://github.com/K1llByte/daw/tree/master/tpcs/tpc8">
             TP8 Directory GitHub Page

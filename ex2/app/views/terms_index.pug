@@ -1,0 +1,29 @@
+doctype html
+title Termos de Índice
+meta(name='viewport' content='width=device-width, initial-scale=1')
+link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+.w3-container
+  h1 Termos de Índice
+
+  table.w3-table.w3-striped.w3-border
+    tr
+      th ID
+      th Termo
+      th Estado
+      th ID Classe
+      th Título Classe
+      th Código Classe
+    each val in data
+      tr
+        td= val.id
+        td= val.termo
+        td= val.estado
+        td
+          a(href=`/classes/${val.codigoClasse}`)= val.idClasse
+        td
+          a(href=`/classes/${val.codigoClasse}`)= val.tituloClasse
+        td
+          a(href=`/classes/${val.codigoClasse}`)= val.codigoClasse
+  
+  a(href='/')
+    button.w3-button.w3-xlarge Home

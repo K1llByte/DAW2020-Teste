@@ -1,0 +1,21 @@
+doctype html
+title Classes
+meta(name='viewport' content='width=device-width, initial-scale=1')
+link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+.w3-container
+  h1 Classes
+
+
+
+  table.w3-table.w3-striped.w3-border
+    tr
+      th Código
+      th Titulo
+    each val in data
+      tr
+        td
+          a(href=`/classes/c${val.codigo}`)= val.codigo
+        td= val.titulo
+  
+  a(href='/')
+    button.w3-button.w3-xlarge Home
